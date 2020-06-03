@@ -7,3 +7,6 @@ def homePageview(request):
 
 def bingoPageView(reuqest):
     return HttpResponse("I am the another method of Pages App")
+
+def dataPageView(request):
+    return HttpResponse("I am another method my name is data!!")
