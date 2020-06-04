@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>THis is first time i am using django template</h1>
+
+    <font size="4">
+<h1> output is </h1><br/>
+<tt>Name is {{ name }}</tt><br/>
+<tt>age is {{ age }}</tt><br/>
+        <tt>Gender is {{ sex }}</tt><br/></font>
+
+    <center>
+    <form action="/add/" method ="POST">
+        {% csrf_token %}
+        Enter first value <input type="text" id="val1" name="val1" value=""/><br/>
+         Enter second value <input type="text" id="val2" name="val2" value=""/><br/>
+        <input type="submit"><br/>
+
+
+    </form>
+    </center>
+
+{% endblock %}
